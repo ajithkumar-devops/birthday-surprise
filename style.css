@@ -35,3 +35,33 @@
   .envelope.opened .env-flap{transform:translateY(-125px) rotateX(70deg);opacity:0}
   .envelope.opened .paper-letter{transform:translateY(-155px);height:300px}
 }
+.final-line{font:italic 30px "Cormorant Garamond";color:#c86d75;margin-top:25px}.placeholder img,.polaroid img{display:block;width:100%;height:100%;object-fit:cover}@media(max-width:600px){.paper-letter{font-size:15px!important}.paper-letter .confession{font-size:32px!important}}
+/* V6 — short interactive petal reveal */
+.petal-scene .garden{width:min(600px,94vw);height:300px;position:relative;margin:10px auto 0}
+.petal-scene .garden-card{position:absolute;inset:55px 35px 35px;background:#fffdf9;border:1px solid #ead8ca;box-shadow:0 20px 50px #896a5d20;display:flex;align-items:center;justify-content:center;padding:35px;z-index:1}
+.petal-scene .garden-card p{font:italic clamp(28px,5vw,45px)/1.05 "Cormorant Garamond";margin:0;max-width:450px}
+.petal-scene .garden-card span{position:absolute;bottom:12px;color:#df8d91;font-size:24px}
+.petal-scene .flower{position:absolute;z-index:4;border:0;background:none;padding:5px;font-size:48px;color:#df9b94;transition:.35s;filter:drop-shadow(0 8px 8px #8b6a5c15)}
+.petal-scene .flower:hover{transform:scale(1.2) rotate(8deg)}
+.petal-scene .flower.picked{animation:petalPop .55s ease}
+.petal-scene .f1{left:8%;top:0}.petal-scene .f2{right:8%;top:7%}.petal-scene .f3{left:13%;bottom:0}.petal-scene .f4{right:15%;bottom:0}
+@keyframes petalPop{50%{transform:scale(1.45) rotate(-15deg)}100%{transform:scale(1.05)}}
+@media(max-width:600px){.petal-scene .garden{height:275px}.petal-scene .garden-card{inset:50px 12px 30px;padding:25px}.petal-scene .flower{font-size:42px}}
+
+/* V7 — subtle 22nd birthday details */
+.birthday-date{
+  margin-top:18px;
+  max-width:470px;
+  color:#9a7b72;
+  font:italic clamp(18px,3vw,24px)/1.3 "Cormorant Garamond";
+  animation:dateReveal 1s ease .25s both;
+}
+.birthday-sub{
+  margin:12px 0 0;
+  color:#9a7b72;
+  font:italic 20px "Cormorant Garamond";
+}
+@keyframes dateReveal{
+  from{opacity:0;transform:translateY(8px)}
+  to{opacity:1;transform:none}
+}

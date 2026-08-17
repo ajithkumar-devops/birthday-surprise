@@ -53,3 +53,15 @@ Put a permitted-to-use song at:
 ## Why this approach
 
 Current creative-web examples commonly use purposeful scroll/input feedback, particles, cinematic transitions and smooth motion rather than animating everything at once. GSAP is a strong choice for timeline/scroll choreography, while Three.js/WebGL is appropriate when a genuinely 3D scene adds value. For this personal birthday site, CSS/DOM interactions are enough to get the premium feel without making the phone experience unnecessarily heavy.
+
+
+## V5 compact version
+This version has 5 scenes: opening, 3-memory carousel, confession envelope, candle wish, and final gift. It intentionally removes the extra promise, flower garden, hold-heart, birthday intro, and separate celebration screens.
+
+
+## V6
+Added back the short interactive 'Touch the petals to reveal them' scene. It reveals four short messages and then leads directly to the confession.
+
+
+## V7 birthday details
+The opening now uses 22 • 08 • 2004 and the next scene introduces her 22nd birthday subtly rather than repeating the birth year throughout the site.
