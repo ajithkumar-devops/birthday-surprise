@@ -150,3 +150,29 @@
         transform: translateX(-16.67%);
     }
 }
+
+/* V12 FINAL: first memory photo keeps its complete original composition.
+   Do not crop the child or the table. */
+.polaroid.first-memory .placeholder,
+.polaroid.first-memory img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+    object-position: center;
+    transform: none;
+}
+
+@media (max-width: 600px) {
+    .polaroid.first-memory .placeholder,
+    .polaroid.first-memory img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: auto;
+        object-fit: contain;
+        object-position: center;
+        transform: none;
+    }
+}

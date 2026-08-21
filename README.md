@@ -84,3 +84,7 @@ Fixed the memory carousel rendering so previous/next and dot controls reliably r
 
 ## V11 first photo adjustment
 The first memory photo is now 150% wider while all five memory photos retain the taller 2:3 portrait format.
+
+
+## V12 first-photo crop fix
+The first memory photo now preserves its complete original composition instead of being cropped into the tall portrait frame. Photos 2–5 retain the taller portrait treatment.
