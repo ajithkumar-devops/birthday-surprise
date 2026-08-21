@@ -80,3 +80,7 @@ Fixed the memory carousel rendering so previous/next and dot controls reliably r
 - Five supplied Blob image URLs are configured.
 - All memory photos use the taller 2:3 portrait frame.
 - The memory carousel remains fully navigable.
+
+
+## V11 first photo adjustment
+The first memory photo is now 150% wider while all five memory photos retain the taller 2:3 portrait format.

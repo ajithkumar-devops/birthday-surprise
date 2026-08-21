@@ -129,3 +129,24 @@
         aspect-ratio: 2 / 3;
     }
 }
+
+/* FINAL V11: first memory photo only — 150% wider.
+   All memory photos remain in the taller 2:3 portrait format. */
+.polaroid.first-memory .placeholder,
+.polaroid.first-memory img {
+    width: 150%;
+    max-width: none;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    transform: translateX(-16.67%);
+}
+
+@media (max-width: 600px) {
+    .polaroid.first-memory .placeholder,
+    .polaroid.first-memory img {
+        width: 150%;
+        max-width: none;
+        aspect-ratio: 2 / 3;
+        transform: translateX(-16.67%);
+    }
+}

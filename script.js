@@ -1,4 +1,5 @@
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];let scene=0,mem=0,candlesOut=false,ctx=null,analyser=null,stream=null,raf=null;$$("[data-her]").forEach(x=>x.textContent=CONFIG.herName);$$("[data-your]").forEach(x=>x.textContent=CONFIG.yourName);const scenes=$$(".scene"),progress=$("#progress");function go(n){scene=Math.max(0,Math.min(5,n));scenes.forEach((x,i)=>x.classList.toggle("active",i===scene));progress.style.width=`${(scene+1)/6*100}%`;window.scrollTo({top:0,behavior:"smooth"});if(scene===1)renderMemory()}$$(".next").forEach(x=>x.onclick=()=>go(scene+1));function renderMemory(){
+ $("#polaroid").classList.toggle("first-memory", mem===0);
     const m = CONFIG.memories[mem];
     const box = $("#memoryImage");
     const polaroid = $("#polaroid");
