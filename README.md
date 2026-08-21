@@ -107,3 +107,7 @@ Updated the letter with the latest wording and highlighted only “Happy Birthda
 
 ## V16 envelope polish
 Long letter is fully hidden while the envelope is closed, then rises above the envelope when opened. Also restored the dynamic `yourName` signature.
+
+
+## V17 long-letter reading fix
+The sealed envelope now hides the letter completely. After opening, the letter rises only slightly and becomes a fixed-height scrollable paper panel, so the full message can be read without the letter moving off-screen.

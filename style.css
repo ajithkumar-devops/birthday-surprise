@@ -305,3 +305,72 @@
         transform: translateY(-155px);
     }
 }
+
+/* V17 — readable long-letter envelope
+   The letter stays hidden inside the sealed envelope. After opening,
+   it rises only a little and gets its own vertical scrollbar. */
+.envelope-wrap:not(.opened) .paper-letter {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(0);
+    pointer-events: none;
+}
+
+.envelope-wrap.opened .paper-letter {
+    visibility: visible;
+    opacity: 1;
+    z-index: 100;
+    height: min(360px, 55svh) !important;
+    max-height: 55svh;
+    overflow-y: auto !important;
+    overflow-x: hidden;
+    transform: translateY(-75px) !important;
+    scrollbar-width: thin;
+    scrollbar-color: #d99591 #f6e7df;
+    padding: 26px 30px 32px;
+}
+
+.envelope-wrap.opened .paper-letter::-webkit-scrollbar {
+    width: 7px;
+}
+
+.envelope-wrap.opened .paper-letter::-webkit-scrollbar-track {
+    background: #f6e7df;
+    border-radius: 10px;
+}
+
+.envelope-wrap.opened .paper-letter::-webkit-scrollbar-thumb {
+    background: #d99591;
+    border-radius: 10px;
+}
+
+.envelope-wrap.opened .env-front {
+    transform: translateY(230px) !important;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.envelope-wrap.opened .env-flap {
+    transform: translateY(-150px) rotateX(70deg) !important;
+    opacity: 0;
+    pointer-events: none;
+}
+
+@media (max-width: 600px) {
+    .envelope-wrap.opened .paper-letter {
+        height: min(360px, 58svh) !important;
+        max-height: 58svh;
+        transform: translateY(-65px) !important;
+        padding: 20px 20px 28px;
+        font-size: 15px !important;
+        line-height: 1.4;
+    }
+
+    .envelope-wrap.opened .paper-letter p {
+        margin: 8px 0;
+    }
+
+    .envelope-wrap.opened .paper-letter .confession {
+        font-size: 30px !important;
+    }
+}
