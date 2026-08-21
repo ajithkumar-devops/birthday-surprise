@@ -65,3 +65,7 @@ Added back the short interactive 'Touch the petals to reveal them' scene. It rev
 
 ## V7 birthday details
 The opening now uses 22 • 08 • 2004 and the next scene introduces her 22nd birthday subtly rather than repeating the birth year throughout the site.
+
+
+## V8 final memory adjustment
+Only the second memory photo uses a taller 2:3 aspect ratio. The first and third memories retain the normal layout.
