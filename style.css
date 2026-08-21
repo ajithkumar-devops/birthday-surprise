@@ -217,3 +217,56 @@
         transform: translate(calc(-50% + var(--sx)), calc(-50% + var(--sy))) scale(1.2);
     }
 }
+
+/* V14 — long confession letter fix
+   Let the paper grow to fit longer text instead of clipping the bottom. */
+.envelope {
+    overflow: visible;
+}
+
+.paper-letter {
+    height: auto !important;
+    min-height: 315px;
+    max-height: none;
+    overflow: visible !important;
+    box-sizing: border-box;
+    padding: 28px 26px 34px;
+}
+
+.paper-letter p {
+    margin: 0 0 12px;
+    line-height: 1.38;
+}
+
+.paper-letter .confession:empty {
+    display: none;
+}
+
+.paper-letter .signature {
+    margin-top: 18px;
+    padding-bottom: 6px;
+}
+
+@media (max-width: 600px) {
+    .paper-letter {
+        min-height: 0;
+        padding: 22px 18px 28px;
+        font-size: 14px !important;
+        line-height: 1.35;
+    }
+
+    .paper-letter p {
+        margin-bottom: 9px;
+        line-height: 1.35;
+    }
+
+    .paper-letter .signature {
+        margin-top: 12px;
+    }
+}
+
+/* V15 — highlight only the birthday greeting */
+.birthday-highlight {
+    color: #d96f78;
+    font-weight: 600;
+}

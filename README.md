@@ -95,3 +95,11 @@ The first memory photo now preserves its complete original composition instead o
 - Each of the four flowers now reveals its own message and animates when tapped.
 - Removed the music control and audio element.
 - Removed the footer.
+
+
+## V14 letter fix
+The confession letter now expands vertically for longer text instead of using a fixed height that clips the ending. Empty confession paragraphs are hidden, and mobile spacing/font sizing is adjusted for longer letters.
+
+
+## V15 birthday highlight
+Updated the letter with the latest wording and highlighted only “Happy Birthday Theju!” in red/pink.
