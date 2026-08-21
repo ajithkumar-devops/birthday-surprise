@@ -69,3 +69,7 @@ The opening now uses 22 • 08 • 2004 and the next scene introduces her 22nd b
 
 ## V8 final memory adjustment
 Only the second memory photo uses a taller 2:3 aspect ratio. The first and third memories retain the normal layout.
+
+
+## V8 photo carousel fix
+Fixed the memory carousel rendering so previous/next and dot controls reliably replace the displayed image. The second image remains taller without breaking the carousel.

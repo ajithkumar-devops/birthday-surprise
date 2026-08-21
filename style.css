@@ -78,3 +78,31 @@
         aspect-ratio: 2 / 3;
     }
 }
+
+/* V8 photo carousel fix */
+.polaroid .placeholder,
+.polaroid img {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.polaroid.tall-memory .placeholder,
+.polaroid.tall-memory img {
+    aspect-ratio: 2 / 3;
+    height: auto;
+}
+
+.polaroid .placeholder {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (max-width: 600px) {
+    .polaroid.tall-memory .placeholder,
+    .polaroid.tall-memory img {
+        aspect-ratio: 2 / 3;
+    }
+}
