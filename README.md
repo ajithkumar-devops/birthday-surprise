@@ -88,3 +88,10 @@ The first memory photo is now 150% wider while all five memory photos retain the
 
 ## V12 first-photo crop fix
 The first memory photo now preserves its complete original composition instead of being cropped into the tall portrait frame. Photos 2–5 retain the taller portrait treatment.
+
+
+## V13 cleanup
+- Fixed the "Touch the petals to reveal them" interaction.
+- Each of the four flowers now reveals its own message and animates when tapped.
+- Removed the music control and audio element.
+- Removed the footer.

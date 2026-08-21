@@ -176,3 +176,44 @@
         transform: none;
     }
 }
+
+/* V13 — working touch-to-reveal petals */
+.petal-scene .flower {
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+.petal-scene .flower:focus,
+.petal-scene .flower:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+
+.petal-scene .flower.picked {
+    animation: petalPop .55s ease;
+    color: #cf817f;
+}
+
+.petal-spark {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 14px;
+    pointer-events: none;
+    animation: petalSpark .7s ease-out forwards;
+}
+
+@keyframes petalSpark {
+    from {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(.5);
+    }
+    to {
+        opacity: 0;
+        transform: translate(calc(-50% + var(--sx)), calc(-50% + var(--sy))) scale(1.2);
+    }
+}
