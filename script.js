@@ -48,7 +48,7 @@ $("#memNext").addEventListener("click", () => {
 const petalMessages = [
     "You make ordinary days feel a little different.",
     "I notice more about you than I probably let you know.",
-    "You became important to me without me even realising it.",
+    "Without even trying, you changed something in me.",
     "And there's one thing I've been wanting to tell you…"
 ];
 
