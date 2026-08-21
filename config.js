@@ -1,6 +1,6 @@
 const CONFIG = {
     herName: "Theju",
-    yourName: "",
+    yourName: "Eshwar",
 
     memories: [
         {
