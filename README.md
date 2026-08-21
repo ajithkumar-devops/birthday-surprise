@@ -103,3 +103,7 @@ The confession letter now expands vertically for longer text instead of using a 
 
 ## V15 birthday highlight
 Updated the letter with the latest wording and highlighted only “Happy Birthday Theju!” in red/pink.
+
+
+## V16 envelope polish
+Long letter is fully hidden while the envelope is closed, then rises above the envelope when opened. Also restored the dynamic `yourName` signature.

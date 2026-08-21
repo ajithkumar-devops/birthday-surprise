@@ -270,3 +270,38 @@
     color: #d96f78;
     font-weight: 600;
 }
+
+/* V16 — long-letter envelope presentation
+   Keep the long letter completely hidden while the envelope is closed.
+   When opened, let the letter rise above the envelope. */
+.envelope-wrap:not(.opened) .paper-letter {
+    transform: translateY(155px);
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.envelope-wrap.opened .paper-letter {
+    opacity: 1;
+    z-index: 100;
+    transform: translateY(-185px);
+    height: auto !important;
+    max-height: none;
+    overflow: visible !important;
+}
+
+.envelope-wrap:not(.opened) .env-back,
+.envelope-wrap:not(.opened) .env-front,
+.envelope-wrap:not(.opened) .env-flap {
+    z-index: 5;
+}
+
+.envelope-wrap.opened .env-back {
+    z-index: 2;
+}
+
+@media (max-width: 600px) {
+    .envelope-wrap.opened .paper-letter {
+        transform: translateY(-155px);
+    }
+}
