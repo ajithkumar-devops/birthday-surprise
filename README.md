@@ -73,3 +73,10 @@ Only the second memory photo uses a taller 2:3 aspect ratio. The first and third
 
 ## V8 photo carousel fix
 Fixed the memory carousel rendering so previous/next and dot controls reliably replace the displayed image. The second image remains taller without breaking the carousel.
+
+
+## Final photo setup
+- Theju and Ajith are configured.
+- Five supplied Blob image URLs are configured.
+- All memory photos use the taller 2:3 portrait frame.
+- The memory carousel remains fully navigable.

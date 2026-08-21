@@ -106,3 +106,26 @@
         aspect-ratio: 2 / 3;
     }
 }
+
+/* FINAL MEMORY PHOTO SIZE
+   All memory photos use a taller 2:3 portrait frame. */
+.polaroid .placeholder,
+.polaroid img {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+}
+
+.polaroid .placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (max-width: 600px) {
+    .polaroid .placeholder,
+    .polaroid img {
+        aspect-ratio: 2 / 3;
+    }
+}
