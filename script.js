@@ -49,7 +49,7 @@ const petalMessages = [
     "You make ordinary days feel a little different.",
     "I notice more about you than I probably let you know.",
     "Without even trying, you changed something in me.",
-    "And there's one thing I've been wanting to tell you…"
+    "Somewhere along the way, you became someone special to me."
 ];
 
 let revealedPetals = 0;
