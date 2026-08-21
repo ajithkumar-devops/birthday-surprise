@@ -4,7 +4,7 @@ const CONFIG = {
 
     memories: [
         {
-            image: "https://0v16kfqw4dfwdg1i.public.blob.vercel-storage.com/IMG_0364.jpeg",
+            image: "https://0v16kfqw4dfwdg1i.public.blob.vercel-storage.com/A7C3ECCC-6864-49FF-9940-8C887A4FADDD.png",
             title: "That little moment",
             text: "Some moments look ordinary when they happen. Later, you realise they weren't."
         },
