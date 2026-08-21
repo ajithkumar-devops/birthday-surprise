@@ -24,7 +24,7 @@ const CONFIG = {
             text: "You probably don't realise how often you've made a normal day feel a little better."
         },
         {
-            image: "https://0v16kfqw4dfwdg1i.public.blob.vercel-storage.com/6C381BDF-58EB-470B-9723-75BBE8E81379.jpeg",
+            image: "https://0v16kfqw4dfwdg1i.public.blob.vercel-storage.com/FA6CA53B-2744-4FA4-8094-5BE530A8E31B.jpeg",
             title: "Another little memory",
             text: "Another moment I wanted to keep here with you. ♡"
         }
